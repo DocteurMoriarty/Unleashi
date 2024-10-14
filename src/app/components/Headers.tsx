@@ -14,7 +14,7 @@ const Headers = () => {
   const pathname = usePathname();
 
   return (
-    <header className="shadow-md w-full">
+    <header className="bg-gray-800 shadow-md w-full">
       <div className="container mx-auto flex justify-between items-center px-4 py-4">
         <nav className="flex space-x-4 w-full justify-between">
           {navLinks.map((link) => {
