@@ -11,12 +11,10 @@ const ClientLayout: React.FC<{ children: React.ReactNode }> = ({
   const pathname = usePathname();
   const pagesSansLayout = ["/testpage"];
 
-  // Si la page est dans pagesSansLayout, ne pas afficher le layout
   if (pagesSansLayout.includes(pathname)) {
     return <>{children}</>;
   }
 
-  // Pour toutes les autres pages, afficher le layout
   return (
     <>
       <header className="bg-gray-800 w-full bg-white shadow-md">
